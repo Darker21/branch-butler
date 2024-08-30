@@ -1,0 +1,37 @@
+{
+  "name": "branch-butler",
+  "version": "1.0.0",
+  "description": "Helps manage the home of your code by providing maintenance of your local git repository",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" npx jest",
+    "start-remove-branches": "node ./src/stale-branch-remover/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darker21/branch-butler.git"
+  },
+  "keywords": [
+    "git",
+    "node",
+    "tool",
+    "github"
+  ],
+  "author": "Jacob Darker",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Darker21/branch-butler/issues"
+  },
+  "homepage": "https://github.com/Darker21/branch-butler#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "simple-git": "^3.25.0",
+    "winston": "^3.14.2",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "sinon": "^18.0.0"
+  }
+}
